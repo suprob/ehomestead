@@ -22,6 +22,8 @@
   --space-5: 32px;
   --space-6: 64px;
   --size-content: 54rem;
+  --size-content-screen: 64rem;
+
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
 }
@@ -221,4 +223,35 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: none;
+}
+
+.wrapper {
+  max-width: var(--size-content-screen);
+  width: 90%;
+  margin: auto;
+}
+
+.banner {
+  padding: 4em 0;
+  background: #413c58;
+  text-align: center;
+  border-radius: 0.5em;
+}
+
+.banner h1 {
+  color: #fff;
+}
+
+a.button {
+  color: #413c58;
+  background: #c4bbaf;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+a.button:hover,
+a.button:focus {
+  background: #fff;
 }

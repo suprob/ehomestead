@@ -71,7 +71,13 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 
 const IndexPage = () => (
   <Layout>
-    <div className={styles.textCenter}>
+    <div className="banner">
+      <h1>Welcome to E. Homestead</h1>
+      <a href="https://www.etsy.com/shop/ehomestead" className="button">
+        View our shop on Etsy
+      </a>
+    </div>
+    {/* <div className={styles.textCenter}>
       <StaticImage
         src="../images/example.png"
         loading="eager"
@@ -95,8 +101,8 @@ const IndexPage = () => (
         <br />
         Edit <code>src/pages/index.js</code> to update this page.
       </p>
-    </div>
-    <ul className={styles.list}>
+    </div> */}
+    {/* <ul className={styles.list}>
       {links.map(link => (
         <li key={link.url} className={styles.listItem}>
           <a
@@ -108,13 +114,13 @@ const IndexPage = () => (
           <p className={styles.listItemDescription}>{link.description}</p>
         </li>
       ))}
-    </ul>
-    {moreLinks.map((link, i) => (
+    </ul> */}
+    {/* {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
         <a href={`${link.url}${utmParameters}`}>{link.text}</a>
         {i !== moreLinks.length - 1 && <> · </>}
       </React.Fragment>
-    ))}
+    ))} */}
   </Layout>
 )
 
