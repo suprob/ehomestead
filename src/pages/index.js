@@ -71,12 +71,16 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 
 const IndexPage = () => (
   <Layout>
-    <div className="banner">
-      <h1>Welcome to E. Homestead</h1>
-      <a href="https://www.etsy.com/shop/ehomestead" className="button">
-        View our shop on Etsy
-      </a>
-    </div>
+    <section className="banner">
+      <div className="wrapper">
+        <h1>Welcome to E. Homestead</h1>
+        <a href="https://www.etsy.com/shop/ehomestead" className="button">
+          View our shop on Etsy
+        </a>
+      </div>
+    </section>
+    <section className="section-main"></section>
+
     {/* <div className={styles.textCenter}>
       <StaticImage
         src="../images/example.png"

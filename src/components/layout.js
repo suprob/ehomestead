@@ -26,15 +26,18 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div className="wrapper">
+      <div>
         <main>{children}</main>
         <footer
+          className="page-footer"
           style={{
             marginTop: `var(--space-5)`,
             fontSize: `var(--font-sm)`,
           }}
         >
-          © {new Date().getFullYear()} E. Homestead
+          <div className="wrapper">
+            © {new Date().getFullYear()} E. Homestead
+          </div>
         </footer>
       </div>
     </>
