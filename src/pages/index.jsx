@@ -74,8 +74,16 @@ const IndexPage = () => (
     <section className="banner">
       <div className="wrapper">
         <h1>Welcome to E. Homestead</h1>
-        <a href="https://www.etsy.com/shop/ehomestead" className="button">
-          View our shop on Etsy
+        <p>
+          We are a small business specializing customized gifts for all. We're
+          just getting started so show your support and check us out on Etsy!
+        </p>
+        <a
+          href="https://www.etsy.com/shop/ehomestead"
+          className="button"
+          aria-label="View our products on Etsy"
+        >
+          View our Products
         </a>
       </div>
     </section>
